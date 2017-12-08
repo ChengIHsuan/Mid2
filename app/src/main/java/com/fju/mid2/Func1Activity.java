@@ -17,9 +17,9 @@ public class Func1Activity extends AppCompatActivity {
 
     public void roll(View view){
         int num = (int) (Math.random() * 6 + 1);
-        Log.d("MainActivity","random" + num);
+        Log.d("Func1Activity","random" + num);
         new AlertDialog.Builder(this)
-                .setMessage(num)
+                .setMessage("It's " + num)
                 .setNegativeButton("CLOSE", null)
                 .show();
     }
